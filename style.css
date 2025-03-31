@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* First level: 1, 2, 3... */
+/* ol.level-1 {
+    list-style-type: none;
+    counter-reset: level1;
+    padding-left: 0;
+}
+
+ol.level-1 > li {
+    counter-increment: level1;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 40px;
+    font-weight: bold;
+}
+ol.level-1 > li * { font-weight: normal; }
+
+ol.level-1 > li::before {
+    content: counter(level1) ".";
+    position: absolute;
+    left: 0;
+}
+
+/* Second level: 1.1, 1.2, 2.1... */
+/* ol.level-2 {
+    list-style-type: none;
+    counter-reset: level2;
+    padding-left: 0px;
+    margin-top: 10px;
+    margin-left: -40px;
+}
+
+ol.level-2 > li {
+    counter-increment: level2;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 40px;
+}
+
+ol.level-2 > li::before {
+    content: counter(level1) "." counter(level2);
+    position: absolute;
+    left: 0;
+}
+
+/* Third level: a.), b.), c.)... */
+/* ol.level-3 {
+    list-style-type: none;
+    counter-reset: level3;
+    padding-left: 0px;
+    margin-top: 10px;
+}
+
+ol.level-3 > li {
+    counter-increment: level3;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 30px;
+}
+
+ol.level-3 > li::before {
+    content: "(" counter(level3, lower-alpha) ")";
+    position: absolute;
+    left: 0;
+}
+
+/* Fourth level: (i), (ii), (iii)... */
+/* ol.level-4 {
+    list-style-type: none;
+    counter-reset: level4;
+    padding-left: 0px;
+    margin-top: 10px;
+}
+
+ol.level-4 > li {
+    counter-increment: level4;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 30px;
+}
+
+ol.level-4 > li::before {
+    content: "(" counter(level4, lower-roman) ")";
+    position: absolute;
+    left: 0;
+}
