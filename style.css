@@ -23,7 +23,6 @@ ol[class^="level-"] {
  */
 ol.level-1 {
     counter-reset: level1;
-    border: 1px solid red;
 }
 
 ol.level-1 > li {
