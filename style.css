@@ -14,11 +14,16 @@ body {
     justify-content: center;
 }
 
-/* First level: 1, 2, 3... */
-/* ol.level-1 {
+ol[class^="level-"] {
     list-style-type: none;
+}
+
+/* 
+ * First level: 1, 2, 3... 
+ */
+ol.level-1 {
     counter-reset: level1;
-    padding-left: 0;
+    border: 1px solid red;
 }
 
 ol.level-1 > li {
@@ -28,6 +33,7 @@ ol.level-1 > li {
     padding-left: 40px;
     font-weight: bold;
 }
+
 ol.level-1 > li * { font-weight: normal; }
 
 ol.level-1 > li::before {
