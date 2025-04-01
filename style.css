@@ -18,6 +18,10 @@ ol[class^="level-"] {
     list-style-type: none;
     font-size: 16px;
 }
+ol[class^="level-"] > li::before{
+    position: absolute;
+    left: 0;
+}
 
 /* 
  * First level: 1, 2, 3... 
@@ -38,12 +42,12 @@ ol.level-1 > li * { font-weight: normal; }
 
 ol.level-1 > li::before {
     content: counter(level1) ".";
-    position: absolute;
-    left: 0;
 }
 
-/* Second level: 1.1, 1.2, 2.1... */
-/* ol.level-2 {
+/* 
+ * Second level: 1.1, 1.2, 2.1... 
+ */
+ol.level-2 {
     list-style-type: none;
     counter-reset: level2;
     padding-left: 0px;
@@ -60,8 +64,6 @@ ol.level-2 > li {
 
 ol.level-2 > li::before {
     content: counter(level1) "." counter(level2);
-    position: absolute;
-    left: 0;
 }
 
 /* Third level: a.), b.), c.)... */
@@ -81,8 +83,6 @@ ol.level-3 > li {
 
 ol.level-3 > li::before {
     content: "(" counter(level3, lower-alpha) ")";
-    position: absolute;
-    left: 0;
 }
 
 /* Fourth level: (i), (ii), (iii)... */
@@ -102,6 +102,4 @@ ol.level-4 > li {
 
 ol.level-4 > li::before {
     content: "(" counter(level4, lower-roman) ")";
-    position: absolute;
-    left: 0;
 }
