@@ -5,7 +5,7 @@
 }
 html, body {
     height: 100%;
-    width: 100%; 
+    width: 100%;
 }
 body {
     font-family: Arial, sans-serif;
@@ -19,13 +19,12 @@ ol[class^="level-"] {
     font-size: 16px;
 }
 ol[class^="level-"] li {
-    position: relative; 
+    position: relative;
 }
 ol[class^="level-"] li::before {
     position: absolute;
     left: 0;
 }
-
 
 /* 
  * First level: 1, 2, 3... 
@@ -43,7 +42,6 @@ ol.level-1 > li * { font-weight: normal; }
 ol.level-1 > li::before {
     content: counter(level1) ".";
 }
-
 
 /* 
  * Second level: 1.1, 1.2, 2.1... 
